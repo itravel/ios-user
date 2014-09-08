@@ -19,8 +19,14 @@ class SMActivityListViewController: UIViewController, UITableViewDataSource, UIT
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // setup side menu
         sideMenu = SideMenu(sourceView: self.view, menuData: ["首页", "我的收藏", "消息", "设置", "反馈"])
         sideMenu!.delegate = self
+        
+        // set backBarButton title
+        let backBarButtonItem = UIBarButtonItem()
+        backBarButtonItem.title = ""
+        self.navigationItem.backBarButtonItem = backBarButtonItem
         
         loadData()
     }

@@ -23,7 +23,6 @@
 		04994819199BB5F300A1A2BD /* foregroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04994813199BB5F300A1A2BD /* foregroundStar@2x.png */; };
 		0499481A199BB5F300A1A2BD /* TQStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04994815199BB5F300A1A2BD /* TQStarRatingView.m */; };
 		04AEDDF6199759B3001BB00E /* SMActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDF5199759B3001BB00E /* SMActivityDetailViewController.swift */; };
-		04D0C5EB19AD6187008DD117 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D0C5EA19AD6187008DD117 /* CoreFoundation.framework */; };
 		04D0C5EE19AF8455008DD117 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0C5EC19AF8455008DD117 /* MenuTableViewController.swift */; };
 		04D0C5EF19AF8455008DD117 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0C5ED19AF8455008DD117 /* SideMenu.swift */; };
 		A2F2B8B4302D4E15A47533A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0E057D73CD4990964843AC /* libPods.a */; };
@@ -74,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D0C5EB19AD6187008DD117 /* CoreFoundation.framework in Frameworks */,
 				A2F2B8B4302D4E15A47533A0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

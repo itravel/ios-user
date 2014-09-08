@@ -1,17 +1,15 @@
-
 import UIKit
 import Foundation
 
 extension UIImageView {
-    func setImage(urlString:String,placeHolder:UIImage!) {
-    
+    func setImage(urlString: String, placeHolder: UIImage!) {
         var url = NSURL.URLWithString(urlString)
         var cacheFilename = url.lastPathComponent
         var cachePath = FileUtility.cachePath(cacheFilename)
-        var image : AnyObject = FileUtility.imageDataFromPath(cachePath)
+        var image: AnyObject = FileUtility.imageDataFromPath(cachePath)
       //  println(cachePath)
         if image as NSObject != NSNull() {
-            self.image = image as UIImage
+            self.image = image as? UIImage
         } else {
             var req = NSURLRequest(URL: url)
             var queue = NSOperationQueue();
@@ -26,11 +24,7 @@ extension UIImageView {
                 } else {
                     dispatch_async(dispatch_get_main_queue(),
                         {
-                            
                             var image = UIImage(data: data)
-                            
-
-
 //                            if image == nil {
 //                                self.image = placeHolder
 //                            } else {

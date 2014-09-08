@@ -213,6 +213,10 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u84-kO-6n1">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
                                                 </imageView>
+                                                <view alpha="0.39999999999999963" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z4M-z8-qY5">
+                                                    <rect key="frame" x="0.0" y="115" width="320" height="60"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="destination" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsz-My-LgO">
                                                     <rect key="frame" x="8" y="147" width="240" height="21"/>
                                                     <constraints>
@@ -272,7 +276,7 @@
                                 <action selector="toggleSideMenu:" destination="bbQ-du-30L" id="JrO-In-epD"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="丽江" id="cpw-lV-sqp"/>
+                        <barButtonItem key="rightBarButtonItem" title="北京" id="cpw-lV-sqp"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="TnQ-uF-jPt" id="YYw-lo-Wro"/>

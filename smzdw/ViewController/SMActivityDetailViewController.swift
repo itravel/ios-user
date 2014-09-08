@@ -23,20 +23,21 @@ class SMActivityDetailViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // get the data passed from list page
         let activityListViewController = (self.parentViewController as UINavigationController).viewControllers[0] as SMActivityListViewController
-        
         activity = activityListViewController.selectedActivity
 
         self.title = activity!["title"] as? String
         
-        var image = activity!["image"] as String
-        var activityImageUrl = "http://115.28.129.120\(image)"
+        let image = activity!["image"] as String
+        let activityImageUrl = "http://115.28.129.120\(image)"
         activityImage!.setImage(activityImageUrl, placeHolder: UIImage(named: ""))
         
         destinationLabel!.text = activity!["destination"] as? String
         timeLabel!.text = activity!["start"] as? String
         
-        var activityId = activity!["id"] as Int
+        // load acitivity data
+        let activityId = activity!["id"] as Int
         loadData(activityId)
     }
     
