@@ -12,7 +12,7 @@ class SMMainViewController: UITabBarController {
     
     let itemArray = ["离我最近", "人气最高", "对我胃口"]
     
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -31,7 +31,7 @@ class SMMainViewController: UITabBarController {
     
     func setupViews() {
         self.automaticallyAdjustsScrollViewInsets = false
-        self.view!.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.whiteColor()
         self.tabBar.hidden = true
         var width = self.view.frame.size.width
         var height = self.view.frame.size.height

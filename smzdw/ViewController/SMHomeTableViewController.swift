@@ -76,7 +76,7 @@ class SMHomeTableViewController: UIViewController, UITableViewDelegate, UITableV
         let manager: AFHTTPRequestOperationManager = AFHTTPRequestOperationManager()
         
         let url: String = "http://115.28.129.120/services/activities"
-        
+        NSLog("testtesttest")
         let requestSuccess = {
             (operation :AFHTTPRequestOperation!, responseObject :AnyObject!) -> Void in
 
@@ -126,10 +126,16 @@ class SMHomeTableViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath: NSIndexPath?) -> UITableViewCell? {
         
-        var cell = tableView?.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as? SMHomeActivityCell
-        var index = indexPath!.row
-        var data = self.dataArray[index] as NSDictionary
-        cell!.data = data
+        var cell = tableView?.dequeueReusableCellWithIdentifier("activityCell", forIndexPath: indexPath) as UITableViewCell?
+//        var index = indexPath!.row
+        var data = self.dataArray[indexPath!.row] as NSDictionary
+//        cell!.data = data
+        NSLog("\(data)")
+        NSLog("\(indexPath!.row)")
+        NSLog("\(cell)")
+//        if data["title"] as NSObject != NSNull() {
+//            cell!.titleLabel!.text = "just eststest"
+//        }
         return cell
        
     }
@@ -138,13 +144,13 @@ class SMHomeTableViewController: UIViewController, UITableViewDelegate, UITableV
         return 176;
     }
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+//    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
 //        var index = indexPath!.row
 //        var data = self.dataArray[index] as NSDictionary
 //        var commentsVC = YRCommentsViewController(nibName :nil, bundle: nil)
 //        commentsVC.jokeId = data.stringAttributeForKey("id")
 //        self.navigationController.pushViewController(commentsVC, animated: true)
-    }
+//    }
     
 //    func refreshView(refreshView:YRRefreshView,didClickButton btn:UIButton)
 //    {

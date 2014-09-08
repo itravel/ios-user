@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042B61DA19A8C7C20089E67B /* SMActivityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B61D919A8C7C20089E67B /* SMActivityListViewController.swift */; };
 		0485D3C4198C6B5B006E3066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D3C3198C6B5B006E3066 /* AppDelegate.swift */; };
 		0485D3C9198C6B5B006E3066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0485D3C7198C6B5B006E3066 /* Main.storyboard */; };
 		0485D3CB198C6B5B006E3066 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0485D3CA198C6B5B006E3066 /* Images.xcassets */; };
 		0485D3D7198C6B5B006E3066 /* smzdwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D3D6198C6B5B006E3066 /* smzdwTests.swift */; };
-		0485D3F8198D25E1006E3066 /* SMHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D3F6198D25E1006E3066 /* SMHomeTableViewController.swift */; };
-		0485D3F9198D25E1006E3066 /* SMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D3F7198D25E1006E3066 /* SMMainViewController.swift */; };
 		0485D401198DEB67006E3066 /* SMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D400198DEB67006E3066 /* SMClient.swift */; };
 		0485D403198E018C006E3066 /* SMClient+Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D402198E018C006E3066 /* SMClient+Activity.swift */; };
-		0485D406198E11EC006E3066 /* SMHomeActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D404198E11EC006E3066 /* SMHomeActivityCell.swift */; };
-		0485D407198E11EC006E3066 /* SMHomeActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0485D405198E11EC006E3066 /* SMHomeActivityCell.xib */; };
+		0485D406198E11EC006E3066 /* SMActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D404198E11EC006E3066 /* SMActivityCell.swift */; };
 		0485D409198E7B19006E3066 /* UIImageViewWebExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D408198E7B19006E3066 /* UIImageViewWebExt.swift */; };
 		0485D40B198E7B3C006E3066 /* FileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485D40A198E7B3C006E3066 /* FileUtility.swift */; };
+		04994816199BB5F300A1A2BD /* backgroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 04994810199BB5F300A1A2BD /* backgroundStar.png */; };
+		04994817199BB5F300A1A2BD /* backgroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04994811199BB5F300A1A2BD /* backgroundStar@2x.png */; };
+		04994818199BB5F300A1A2BD /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 04994812199BB5F300A1A2BD /* foregroundStar.png */; };
+		04994819199BB5F300A1A2BD /* foregroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04994813199BB5F300A1A2BD /* foregroundStar@2x.png */; };
+		0499481A199BB5F300A1A2BD /* TQStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04994815199BB5F300A1A2BD /* TQStarRatingView.m */; };
+		04AEDDF6199759B3001BB00E /* SMActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDF5199759B3001BB00E /* SMActivityDetailViewController.swift */; };
+		04D0C5EB19AD6187008DD117 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D0C5EA19AD6187008DD117 /* CoreFoundation.framework */; };
+		04D0C5EE19AF8455008DD117 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0C5EC19AF8455008DD117 /* MenuTableViewController.swift */; };
+		04D0C5EF19AF8455008DD117 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0C5ED19AF8455008DD117 /* SideMenu.swift */; };
 		A2F2B8B4302D4E15A47533A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0E057D73CD4990964843AC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042B61D919A8C7C20089E67B /* SMActivityListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMActivityListViewController.swift; sourceTree = "<group>"; };
 		0485D3BE198C6B5B006E3066 /* smzdw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smzdw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0485D3C2198C6B5B006E3066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0485D3C3198C6B5B006E3066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,14 +50,21 @@
 		0485D3D5198C6B5B006E3066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0485D3D6198C6B5B006E3066 /* smzdwTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smzdwTests.swift; sourceTree = "<group>"; };
 		0485D3E8198CE45A006E3066 /* SMZDW-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMZDW-Bridging-Header.h"; sourceTree = "<group>"; };
-		0485D3F6198D25E1006E3066 /* SMHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMHomeTableViewController.swift; sourceTree = "<group>"; };
-		0485D3F7198D25E1006E3066 /* SMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMMainViewController.swift; sourceTree = "<group>"; };
 		0485D400198DEB67006E3066 /* SMClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMClient.swift; sourceTree = "<group>"; };
 		0485D402198E018C006E3066 /* SMClient+Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMClient+Activity.swift"; sourceTree = "<group>"; };
-		0485D404198E11EC006E3066 /* SMHomeActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMHomeActivityCell.swift; sourceTree = "<group>"; };
-		0485D405198E11EC006E3066 /* SMHomeActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMHomeActivityCell.xib; sourceTree = "<group>"; };
+		0485D404198E11EC006E3066 /* SMActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMActivityCell.swift; sourceTree = "<group>"; };
 		0485D408198E7B19006E3066 /* UIImageViewWebExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewWebExt.swift; sourceTree = "<group>"; };
 		0485D40A198E7B3C006E3066 /* FileUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtility.swift; sourceTree = "<group>"; };
+		04994810199BB5F300A1A2BD /* backgroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundStar.png; sourceTree = "<group>"; };
+		04994811199BB5F300A1A2BD /* backgroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundStar@2x.png"; sourceTree = "<group>"; };
+		04994812199BB5F300A1A2BD /* foregroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foregroundStar.png; sourceTree = "<group>"; };
+		04994813199BB5F300A1A2BD /* foregroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foregroundStar@2x.png"; sourceTree = "<group>"; };
+		04994814199BB5F300A1A2BD /* TQStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQStarRatingView.h; sourceTree = "<group>"; };
+		04994815199BB5F300A1A2BD /* TQStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQStarRatingView.m; sourceTree = "<group>"; };
+		04AEDDF5199759B3001BB00E /* SMActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMActivityDetailViewController.swift; sourceTree = "<group>"; };
+		04D0C5EA19AD6187008DD117 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		04D0C5EC19AF8455008DD117 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = ../../../smzdw/smzdw/View/MenuTableViewController.swift; sourceTree = "<group>"; };
+		04D0C5ED19AF8455008DD117 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenu.swift; path = ../../../smzdw/smzdw/View/SideMenu.swift; sourceTree = "<group>"; };
 		3CBAA908564245BC89E66BD3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8C0E057D73CD4990964843AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -59,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D0C5EB19AD6187008DD117 /* CoreFoundation.framework in Frameworks */,
 				A2F2B8B4302D4E15A47533A0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,8 +170,10 @@
 		0485D3F4198D25E1006E3066 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0485D404198E11EC006E3066 /* SMHomeActivityCell.swift */,
-				0485D405198E11EC006E3066 /* SMHomeActivityCell.xib */,
+				0499480E199BB5F300A1A2BD /* TQStarRating */,
+				0485D404198E11EC006E3066 /* SMActivityCell.swift */,
+				04D0C5EC19AF8455008DD117 /* MenuTableViewController.swift */,
+				04D0C5ED19AF8455008DD117 /* SideMenu.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,8 +181,8 @@
 		0485D3F5198D25E1006E3066 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0485D3F6198D25E1006E3066 /* SMHomeTableViewController.swift */,
-				0485D3F7198D25E1006E3066 /* SMMainViewController.swift */,
+				04AEDDF5199759B3001BB00E /* SMActivityDetailViewController.swift */,
+				042B61D919A8C7C20089E67B /* SMActivityListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -178,9 +196,31 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		0499480E199BB5F300A1A2BD /* TQStarRating */ = {
+			isa = PBXGroup;
+			children = (
+				0499480F199BB5F300A1A2BD /* Image */,
+				04994814199BB5F300A1A2BD /* TQStarRatingView.h */,
+				04994815199BB5F300A1A2BD /* TQStarRatingView.m */,
+			);
+			path = TQStarRating;
+			sourceTree = "<group>";
+		};
+		0499480F199BB5F300A1A2BD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				04994810199BB5F300A1A2BD /* backgroundStar.png */,
+				04994811199BB5F300A1A2BD /* backgroundStar@2x.png */,
+				04994812199BB5F300A1A2BD /* foregroundStar.png */,
+				04994813199BB5F300A1A2BD /* foregroundStar@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		2075D10622C4450C9F412F76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04D0C5EA19AD6187008DD117 /* CoreFoundation.framework */,
 				8C0E057D73CD4990964843AC /* libPods.a */,
 			);
 			name = Frameworks;
@@ -269,9 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0485D407198E11EC006E3066 /* SMHomeActivityCell.xib in Resources */,
+				04994818199BB5F300A1A2BD /* foregroundStar.png in Resources */,
 				0485D3C9198C6B5B006E3066 /* Main.storyboard in Resources */,
 				0485D3CB198C6B5B006E3066 /* Images.xcassets in Resources */,
+				04994817199BB5F300A1A2BD /* backgroundStar@2x.png in Resources */,
+				04994816199BB5F300A1A2BD /* backgroundStar.png in Resources */,
+				04994819199BB5F300A1A2BD /* foregroundStar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,13 +366,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0485D40B198E7B3C006E3066 /* FileUtility.swift in Sources */,
-				0485D3F9198D25E1006E3066 /* SMMainViewController.swift in Sources */,
+				04AEDDF6199759B3001BB00E /* SMActivityDetailViewController.swift in Sources */,
 				0485D401198DEB67006E3066 /* SMClient.swift in Sources */,
 				0485D409198E7B19006E3066 /* UIImageViewWebExt.swift in Sources */,
 				0485D403198E018C006E3066 /* SMClient+Activity.swift in Sources */,
-				0485D3F8198D25E1006E3066 /* SMHomeTableViewController.swift in Sources */,
+				042B61DA19A8C7C20089E67B /* SMActivityListViewController.swift in Sources */,
+				0499481A199BB5F300A1A2BD /* TQStarRatingView.m in Sources */,
+				04D0C5EF19AF8455008DD117 /* SideMenu.swift in Sources */,
+				04D0C5EE19AF8455008DD117 /* MenuTableViewController.swift in Sources */,
 				0485D3C4198C6B5B006E3066 /* AppDelegate.swift in Sources */,
-				0485D406198E11EC006E3066 /* SMHomeActivityCell.swift in Sources */,
+				0485D406198E11EC006E3066 /* SMActivityCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
