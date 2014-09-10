@@ -23,6 +23,8 @@ class SMActivityDetailViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.automaticallyAdjustsScrollViewInsets = false
+        
         // get the data passed from list page
         let activityListViewController = (self.parentViewController as UINavigationController).viewControllers[0] as SMActivityListViewController
         activity = activityListViewController.selectedActivity
