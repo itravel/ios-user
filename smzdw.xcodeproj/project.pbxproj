@@ -23,9 +23,9 @@
 		04994819199BB5F300A1A2BD /* foregroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04994813199BB5F300A1A2BD /* foregroundStar@2x.png */; };
 		0499481A199BB5F300A1A2BD /* TQStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04994815199BB5F300A1A2BD /* TQStarRatingView.m */; };
 		04AEDDF6199759B3001BB00E /* SMActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDF5199759B3001BB00E /* SMActivityDetailViewController.swift */; };
-		04D0C5EE19AF8455008DD117 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0C5EC19AF8455008DD117 /* MenuTableViewController.swift */; };
-		04D0C5EF19AF8455008DD117 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0C5ED19AF8455008DD117 /* SideMenu.swift */; };
 		A2F2B8B4302D4E15A47533A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0E057D73CD4990964843AC /* libPods.a */; };
+		AFB0BF1C19BDEF94009838A2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB0BF1B19BDEF94009838A2 /* MenuTableViewController.swift */; };
+		AFB0BF1E19BDEFA2009838A2 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB0BF1D19BDEFA2009838A2 /* SideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +62,10 @@
 		04994815199BB5F300A1A2BD /* TQStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQStarRatingView.m; sourceTree = "<group>"; };
 		04AEDDF5199759B3001BB00E /* SMActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMActivityDetailViewController.swift; sourceTree = "<group>"; };
 		04D0C5EA19AD6187008DD117 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		04D0C5EC19AF8455008DD117 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = ../../../smzdw/smzdw/View/MenuTableViewController.swift; sourceTree = "<group>"; };
-		04D0C5ED19AF8455008DD117 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenu.swift; path = ../../../smzdw/smzdw/View/SideMenu.swift; sourceTree = "<group>"; };
 		3CBAA908564245BC89E66BD3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8C0E057D73CD4990964843AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB0BF1B19BDEF94009838A2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		AFB0BF1D19BDEFA2009838A2 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +170,8 @@
 			children = (
 				0499480E199BB5F300A1A2BD /* TQStarRating */,
 				0485D404198E11EC006E3066 /* SMActivityCell.swift */,
-				04D0C5EC19AF8455008DD117 /* MenuTableViewController.swift */,
-				04D0C5ED19AF8455008DD117 /* SideMenu.swift */,
+				AFB0BF1B19BDEF94009838A2 /* MenuTableViewController.swift */,
+				AFB0BF1D19BDEFA2009838A2 /* SideMenu.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -370,8 +370,8 @@
 				0485D403198E018C006E3066 /* SMClient+Activity.swift in Sources */,
 				042B61DA19A8C7C20089E67B /* SMActivityListViewController.swift in Sources */,
 				0499481A199BB5F300A1A2BD /* TQStarRatingView.m in Sources */,
-				04D0C5EF19AF8455008DD117 /* SideMenu.swift in Sources */,
-				04D0C5EE19AF8455008DD117 /* MenuTableViewController.swift in Sources */,
+				AFB0BF1E19BDEFA2009838A2 /* SideMenu.swift in Sources */,
+				AFB0BF1C19BDEF94009838A2 /* MenuTableViewController.swift in Sources */,
 				0485D3C4198C6B5B006E3066 /* AppDelegate.swift in Sources */,
 				0485D406198E11EC006E3066 /* SMActivityCell.swift in Sources */,
 			);
